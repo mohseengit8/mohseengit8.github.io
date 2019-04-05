@@ -1,0 +1,111 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 span{
+  font-family: Comic Sans MS;
+}
+/* header */
+header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(images/IMG_20190126_150801.jpg) no-repeat center center /cover;
+}
+
+/* navbar */
+
+.nav-menu{
+  background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,.7));
+  padding: 30px;
+  transition: all .7s;
+}
+.menu-item{
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #aaa;
+  transition: color .4s;
+}
+.menu-item:hover{
+  color: teal;
+}
+.nav-active{
+  color:teal;
+}
+
+.line1, .line2, .line3{
+  width:23px;
+  height:3px;
+  margin:5px; 
+  transition: all .4s;
+}
+.change .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line2{
+  opacity:0;
+}
+.change .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.custom-navbar{
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,.7)); ;
+}
+/* end of navbar */
+
+/* banner */
+.banner {
+  position: absolute;
+  top: 40%;
+  width: 60%;
+}
+
+.banner-heading {
+  animation-name: anim;
+  animation-duration: 2s;
+}
+
+.banner-par {
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* end of banner */
+
+/* end of header */
+/* Education */
+#education{
+  list-style: none;
+}
+#engg{
+  border:2px solid #FFCC99;
+  border-radius:  0px 10px;
+  background: #FFCC99;
+  color:black;
+}
+#naresh{
+  border:2px solid #FF9999;
+  border-radius:  0px 10px;
+  background: #FF9999;
+  color:black;
+}
+
+#fcc{
+  border:2px solid teal;
+  border-radius:  0px 10px;
+  background:teal;
+  color:black;
+}
+
+
