@@ -21,7 +21,7 @@ header {
 .menu-item{
   font-size: 13px;
   letter-spacing: 1px;
-  color: #aaa;
+  color: chartreuse;
   transition: color .4s;
 }
 .menu-item:hover{
